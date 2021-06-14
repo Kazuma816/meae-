@@ -11,7 +11,7 @@ import SwiftUI
 struct meae_App: App {
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: LoginViewModel())
+            SignView()
         }
     }
 }

@@ -33,7 +33,10 @@ struct LoginView: View {
                 // ボタンが選択されたことをLoginViewModelの変数isLoginButtonTappedに通知
                 viewModel.isLoginButtonTapped = true
             }) {
+                
+                NavigationLink(destination: SignUpView()) {
                 Text("ログイン")
+                }
             }
             .frame(width: 200, height: 45)
             .foregroundColor(Color.white)
@@ -42,6 +45,8 @@ struct LoginView: View {
             .cornerRadius(10, antialiased: true)
             // IDとパスワードがどちらも半角英数で入力されていればボタンを有効にする
             .disabled(!viewModel.isValidId || !viewModel.isValidPassword)
+            
+        
         }
     }
 }
