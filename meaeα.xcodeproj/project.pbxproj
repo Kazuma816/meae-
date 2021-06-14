@@ -13,6 +13,10 @@
 		A440B84A2677404B00EC86DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A440B8492677404B00EC86DF /* Preview Assets.xcassets */; };
 		A440B8552677404B00EC86DF /* meae_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8542677404B00EC86DF /* meae_Tests.swift */; };
 		A440B8602677404B00EC86DF /* meae_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B85F2677404B00EC86DF /* meae_UITests.swift */; };
+		A440B86E2677508A00EC86DF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B86D2677508A00EC86DF /* LoginView.swift */; };
+		A440B8702677514F00EC86DF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B86F2677514F00EC86DF /* LoginViewModel.swift */; };
+		A440B8722677517400EC86DF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8712677517400EC86DF /* String+Extensions.swift */; };
+		A440B8742677519600EC86DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8732677519600EC86DF /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		A440B85B2677404B00EC86DF /* meaeαUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meaeαUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A440B85F2677404B00EC86DF /* meae_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meae_UITests.swift; sourceTree = "<group>"; };
 		A440B8612677404B00EC86DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A440B86D2677508A00EC86DF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A440B86F2677514F00EC86DF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A440B8712677517400EC86DF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A440B8732677519600EC86DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				A440B8422677404900EC86DF /* meae_App.swift */,
 				A440B8442677404900EC86DF /* ContentView.swift */,
+				A440B86D2677508A00EC86DF /* LoginView.swift */,
+				A440B86F2677514F00EC86DF /* LoginViewModel.swift */,
+				A440B8712677517400EC86DF /* String+Extensions.swift */,
+				A440B8732677519600EC86DF /* SceneDelegate.swift */,
 				A440B8462677404B00EC86DF /* Assets.xcassets */,
 				A440B84B2677404B00EC86DF /* Info.plist */,
 				A440B8482677404B00EC86DF /* Preview Content */,
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A440B8722677517400EC86DF /* String+Extensions.swift in Sources */,
+				A440B8702677514F00EC86DF /* LoginViewModel.swift in Sources */,
+				A440B86E2677508A00EC86DF /* LoginView.swift in Sources */,
 				A440B8452677404900EC86DF /* ContentView.swift in Sources */,
 				A440B8432677404900EC86DF /* meae_App.swift in Sources */,
+				A440B8742677519600EC86DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
