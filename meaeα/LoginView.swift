@@ -34,7 +34,7 @@ struct LoginView: View {
                 viewModel.isLoginButtonTapped = true
             }) {
                 
-                NavigationLink(destination: SignUpView()) {
+                NavigationLink(destination: top()) {
                 Text("ログイン")
                 }
             }
