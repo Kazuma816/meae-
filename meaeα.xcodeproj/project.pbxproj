@@ -19,6 +19,7 @@
 		A440B8742677519600EC86DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8732677519600EC86DF /* SceneDelegate.swift */; };
 		A440B8762677941600EC86DF /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8752677941600EC86DF /* SignView.swift */; };
 		A440B8782677947F00EC86DF /* SignUpVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440B8772677947F00EC86DF /* SignUpVIew.swift */; };
+		A4D720F22678F1BE00F685A0 /* top.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D720F12678F1BE00F685A0 /* top.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A440B8732677519600EC86DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A440B8752677941600EC86DF /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		A440B8772677947F00EC86DF /* SignUpVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVIew.swift; sourceTree = "<group>"; };
+		A4D720F12678F1BE00F685A0 /* top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				A440B8712677517400EC86DF /* String+Extensions.swift */,
 				A440B8772677947F00EC86DF /* SignUpVIew.swift */,
 				A440B8732677519600EC86DF /* SceneDelegate.swift */,
+				A4D720F12678F1BE00F685A0 /* top.swift */,
 				A440B8462677404B00EC86DF /* Assets.xcassets */,
 				A440B84B2677404B00EC86DF /* Info.plist */,
 				A440B8482677404B00EC86DF /* Preview Content */,
@@ -285,6 +288,7 @@
 				A440B8452677404900EC86DF /* ContentView.swift in Sources */,
 				A440B8432677404900EC86DF /* meae_App.swift in Sources */,
 				A440B8742677519600EC86DF /* SceneDelegate.swift in Sources */,
+				A4D720F22678F1BE00F685A0 /* top.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
