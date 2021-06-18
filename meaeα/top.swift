@@ -10,22 +10,157 @@ import SwiftUI
 struct top: View {
     var body: some View {
         
+        
+        VStack{
+            Text("Youtuber")
+                .multilineTextAlignment(.leading)
+                .padding()
+        
         ScrollView (.horizontal){
+            
+            HStack{
             
            
                        
             Image("flo")
                 .resizable()
-                .frame(width: 200, height: 200)
+                .frame(width: 150, height: 150)
                 .scaledToFill()
                 .border(Color.black, width: 10)
                             // Imageに対して角丸を描画する
                 .cornerRadius(30)
+            
+            Image("flo")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .scaledToFill()
+                .border(Color.black, width: 10)
+                            // Imageに対して角丸を描画する
+                .cornerRadius(30)
+            
+            Image("flo")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .scaledToFill()
+                .border(Color.black, width: 10)
+                            // Imageに対して角丸を描画する
+                .cornerRadius(30)
+                
+            Image("flo")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .scaledToFill()
+                .border(Color.black, width: 10)
+                               
+                .cornerRadius(30)
                     
+            }
                             
                          
                     
         }
+            VStack{
+                Text("TikToker")
+                    .multilineTextAlignment(.leading)
+                    .padding()
+            
+            ScrollView (.horizontal){
+                
+                HStack{
+                
+               
+                           
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                    
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                   
+                    .cornerRadius(30)
+                        
+                }
+                                
+                             
+                        
+            }
+                
+            }
+            VStack{
+                Text("Instagrammer")
+                    .multilineTextAlignment(.leading)
+                    .padding()
+            
+            ScrollView (.horizontal){
+                
+                HStack{
+                
+               
+                           
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                // Imageに対して角丸を描画する
+                    .cornerRadius(30)
+                    
+                Image("flo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                    .border(Color.black, width: 10)
+                                   
+                    .cornerRadius(30)
+                        
+                }
+                                
+                             
+                        
+            }
+                
+            }
+        }
+        
     }
 }
 
@@ -34,5 +169,6 @@ struct top: View {
 struct top_Previews: PreviewProvider {
     static var previews: some View {
         top()
+            .padding(.leading)
     }
 }
