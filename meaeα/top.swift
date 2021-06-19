@@ -21,7 +21,7 @@ struct top: View {
             HStack{
             
            
-                       
+                NavigationLink(destination: Inhul1()){
             Image("flo")
                 .resizable()
                 .frame(width: 150, height: 150)
@@ -29,6 +29,7 @@ struct top: View {
                 .border(Color.black, width: 10)
                             // Imageに対して角丸を描画する
                 .cornerRadius(30)
+                }
             
             Image("flo")
                 .resizable()
