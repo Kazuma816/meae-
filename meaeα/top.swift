@@ -13,8 +13,11 @@ struct top: View {
         
         VStack{
             Text("Youtuber")
+                .font(.title2)
+                .fontWeight(.heavy)
                 .multilineTextAlignment(.leading)
                 .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
         
         ScrollView (.horizontal){
             
@@ -62,8 +65,11 @@ struct top: View {
         }
             VStack{
                 Text("TikToker")
+                    .font(.title2)
+                    .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
                     .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
             
             ScrollView (.horizontal){
                 
@@ -112,8 +118,11 @@ struct top: View {
             }
             VStack{
                 Text("Instagrammer")
+                    .font(.title2)
+                    .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
                     .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
             
             ScrollView (.horizontal){
                 
