@@ -24,7 +24,7 @@ struct top: View {
             HStack{
             
            
-                NavigationLink(destination: Inhul1()){
+                NavigationLink(destination: Inhul1(title: "Groups", subtitle: "Choose a group to connect", bgColor: Color("customBlue"))){
             Image("flo")
                 .resizable()
                 .frame(width: 150, height: 150)
