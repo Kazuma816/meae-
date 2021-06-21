@@ -20,23 +20,49 @@ struct Inhul1: View {
     
     var body: some View {
         GeometryReader { geometry in
+            
+            VStack{
             ZStack {
                             Ellipse()
                                 
-                                .fill(Color.red)
+                            .fill(Color(red: 0.843, green: 0.408, blue: 0.937, opacity: 1))
                             .frame(width: geometry.size.width * 1.4, height: geometry.size.height * 0.33)
                             .position(x: geometry.size.width / 2.35, y: geometry.size.height * 0.1)
                             .shadow(radius: 3)
                                 .edgesIgnoringSafeArea(.all)
-               
-                VStack {
+                
+                HStack {
+                                   VStack(alignment: .leading) {
+                                       Text("YouTuber")
+                                           .font(.title)
+                                           .fontWeight(.bold)
+                                           .foregroundColor(Color.white)
+                                       
+                                       Text("者じゃyじゃん")
+                                           .font(.subheadline)
+                                           .fontWeight(.regular)
+                                           .foregroundColor(Color.white)
+                                       Spacer()
+                                   }
+                
+                
+            .padding(.leading, 25)
+            .padding(.top, 30)
+             Spacer()
+                }
+                VStack{
                 Image("flo")
                                 .resizable()
                                 .clipShape(Circle())
                                 .frame(width: 300, height: 300)
                     
+                    
+                    
                     Text("旅行チャンネル")
-                            
+                }
+                    
+                VStack{
+                            Spacer()
                             Button(action: {
                             }, label: {
                                 Text("購入する")
@@ -46,23 +72,25 @@ struct Inhul1: View {
                             .frame(height: 50)
                             .frame(maxWidth: .infinity)
                             .background(
-                                RoundedRectangle(cornerRadius: 50, style: .continuous).fill(Color.red)
+                                RoundedRectangle(cornerRadius: 50, style: .continuous).fill(Color(red: 0.843, green: 0.408, blue: 0.937, opacity: 1))
                             )
                             .overlay(
                                 RoundedRectangle(cornerRadius: 50, style: .continuous)
                                     .strokeBorder(Color.blue, lineWidth: 1)
                             )
+                    
                             
+                }
 
-                        }
+                        
             }
                         }
                     }
+    }
     
         
         
-            
-    }
+            }
 
 
 struct Inhul1_Previews: PreviewProvider {
