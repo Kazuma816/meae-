@@ -26,22 +26,26 @@ struct Inhul1: View {
                             Ellipse()
                                 
                             .fill(Color(red: 0.843, green: 0.408, blue: 0.937, opacity: 1))
-                            .frame(width: geometry.size.width * 1.4, height: geometry.size.height * 0.33)
+                            .frame(width: geometry.size.width * 1.4, height: geometry.size.height * 0.53)
                             .position(x: geometry.size.width / 2.35, y: geometry.size.height * 0.1)
                             .shadow(radius: 3)
                                 .edgesIgnoringSafeArea(.all)
                 
                 HStack {
+                    
+                    
                                    VStack(alignment: .leading) {
                                        Text("YouTuber")
                                            .font(.title)
                                            .fontWeight(.bold)
-                                           .foregroundColor(Color.white)
+                                        .foregroundColor(Color.white)
+                                     
                                        
                                        Text("者じゃyじゃん")
                                            .font(.subheadline)
                                            .fontWeight(.regular)
-                                           .foregroundColor(Color.white)
+                                        .foregroundColor(Color.white)
+                                       
                                        Spacer()
                                    }
                 
@@ -50,16 +54,20 @@ struct Inhul1: View {
             .padding(.top, 30)
              Spacer()
                 }
-                VStack{
+                VStack(alignment: .leading){
+                    
                 Image("flo")
                                 .resizable()
                                 .clipShape(Circle())
-                                .frame(width: 300, height: 300)
+                                .frame(width: 400, height: 400)
                     
                     
                     
                     Text("旅行チャンネル")
+                        .font(.title2)
+                        .fontWeight(.heavy)
                 }
+                .padding(.bottom)
                     
                 VStack{
                             Spacer()
