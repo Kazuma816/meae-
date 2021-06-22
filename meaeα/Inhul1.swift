@@ -14,6 +14,8 @@ class HostingController<Content> : UIHostingController<Content> where Content : 
 }
 
 struct Inhul1: View {
+    @State private var show: Bool = false
+    
     let title: LocalizedStringKey
         let subtitle: LocalizedStringKey
     var bgColor: Color
@@ -71,12 +73,14 @@ struct Inhul1: View {
                     
                 VStack{
                             Spacer()
-                            Button(action: {
-                            }, label: {
-                                Text("購入する")
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(Color.white)
-                            })
+                    Button(action: { self.show = true /*またはself.show.toggle() */ }) {
+                        Text("購入する")
+                                                            .fontWeight(.heavy)
+                                                            .foregroundColor(Color.white)
+                    }
+                    .sheet(isPresented: self.$show) {
+                        infoView()
+                    }
                             .frame(height: 50)
                             .frame(maxWidth: .infinity)
                             .background(
