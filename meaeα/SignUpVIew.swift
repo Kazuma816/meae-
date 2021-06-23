@@ -24,7 +24,7 @@ struct SignUpView: View {
                Text("新規登録する")
            }
 
-           NavigationLink(destination: ContentView(),
+           NavigationLink(destination: top(),
                           isActive: self.$pushSignUp) {
                EmptyView()
            }.hidden()

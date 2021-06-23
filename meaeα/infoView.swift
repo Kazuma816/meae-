@@ -10,7 +10,7 @@ import SwiftUI
 struct infoView: View {
     @State private var name = ""
     var body: some View {
-        
+        NavigationView {
         VStack {
             Spacer()
                     TextField("名前（フルネーム）", text: $name)
@@ -47,9 +47,13 @@ struct infoView: View {
                     )
             }
         }
+        .navigationBarTitle("購入手続き", displayMode: .inline)
+                    
                     
         
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
             
     }
 

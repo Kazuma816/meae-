@@ -64,7 +64,7 @@ struct top: View {
                     
         }
             VStack{
-                Text("TikToker")
+                Text("VTuber")
                     .font(.title2)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
@@ -117,7 +117,7 @@ struct top: View {
                 
             }
             VStack{
-                Text("Instagrammer")
+                Text("TikToker")
                     .font(.title2)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
