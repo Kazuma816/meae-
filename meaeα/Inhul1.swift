@@ -86,11 +86,7 @@ struct Inhul1: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 50, style: .continuous).fill(Color(red: 0.843, green: 0.408, blue: 0.937, opacity: 1))
                             )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 50, style: .continuous)
-                                    .strokeBorder(Color.blue, lineWidth: 1)
-                            )
-                    
+                        
                             
                 }
 

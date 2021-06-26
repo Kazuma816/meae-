@@ -17,16 +17,19 @@ struct infoView: View {
                          // 入力域のまわりを枠で囲む
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()  // 余白を追加
+            
+            Spacer()
                     TextField("電話番号", text: $name)
-                        // 入力域のまわりを枠で囲む
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .keyboardType(.phonePad)
                         .padding()
+            
+            Spacer()
             TextField("メッセージ", text: $name)
                 // 入力域のまわりを枠で囲む
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                    
+            Spacer()
                 
             VStack{
                     Spacer()
@@ -40,10 +43,6 @@ struct infoView: View {
                     .frame(maxWidth: .infinity)
                     .background(
                         RoundedRectangle(cornerRadius: 50, style: .continuous).fill(Color(red: 0.843, green: 0.408, blue: 0.937, opacity: 1))
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 50, style: .continuous)
-                            .strokeBorder(Color.blue, lineWidth: 1)
                     )
             }
         }
