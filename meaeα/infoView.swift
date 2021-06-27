@@ -9,8 +9,11 @@ import SwiftUI
 
 struct infoView: View {
     @State private var name = ""
+    @Environment(\.presentationMode) var presentation
+    
     var body: some View {
         NavigationView {
+            
         VStack {
             Spacer()
                     TextField("名前（フルネーム）", text: $name)
@@ -47,6 +50,15 @@ struct infoView: View {
             }
         }
         .navigationBarTitle("購入手続き", displayMode: .inline)
+        .navigationBarItems(leading: Button(action: {
+            self.presentation.wrappedValue.dismiss()
+            print("戻るボタンが押されました。")
+        }, label: {
+            Text("戻る")
+            
+        })
+            )
+        
                     
                     
         
