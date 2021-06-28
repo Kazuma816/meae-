@@ -11,6 +11,9 @@ struct SignView: View {
    var body: some View {
        NavigationView {
            VStack(spacing: 80) {
+            
+            Image("m8")
+            
             Button(action: {
             }, label: {
                 NavigationLink(destination: SignUpView()) {

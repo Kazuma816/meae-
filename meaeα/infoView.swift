@@ -9,6 +9,8 @@ import SwiftUI
 
 struct infoView: View {
     @State private var name = ""
+    @State private var phone = ""
+    @State private var message = ""
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
@@ -22,13 +24,13 @@ struct infoView: View {
                         .padding()  // 余白を追加
             
             Spacer()
-                    TextField("電話番号", text: $name)
+                    TextField("電話番号", text: $phone)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .keyboardType(.phonePad)
                         .padding()
             
             Spacer()
-            TextField("メッセージ", text: $name)
+            TextField("メッセージ", text: $message)
                 // 入力域のまわりを枠で囲む
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
